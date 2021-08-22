@@ -1,0 +1,130 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 50vh;
+}
+section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section:nth-child(odd)
+{
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+}
+section:before {
+content: attr(data-text);
+color: #262626;
+font-size: 8em;
+text-transform: uppercase;
+font-weight: bold;
+}
+ul {
+  width: 100%;
+  background: #000;
+  height: 50px;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  top: 0;
+  letter-spacing: 0;
+  display: flex;
+  justify-content: space-around;
+}
+ul li {
+  list-style: none;
+}
+ul li a {
+  color: #fff;
+  line-height: 50px;
+  box-sizing: border-box;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+html {
+  scroll-behavior: smooth;
+}
+.text1 {
+  font-size: 4rem;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 100px;
+  margin-bottom: 100px;
+  align-content: center;
+  border: solid 2px black;
+  background-color: black;
+}
+.text2 {
+  border: solid 2px black;
+  font-size: 4rem;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 100px;
+  margin-bottom: 100px;
+  align-content: center;
+  background-color: black;
+}
+.text3 {
+  border: solid 2px black;
+  font-size: 4rem;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 100px;
+  margin-bottom: 100px;
+  align-content: center;
+  background-color: black;
+  padding: 2px;
+}
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+.author {
+  font-size: 4rem;
+  text-align: center;
+  padding: 2px;
+  background-color: #000;
+  color: white;
+  font-family: 'Press Start 2P', cursive;
+  
+}
+
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+.rekrutacja {
+  color: green;
+}
+.discord {
+  color: rebeccapurple;
+}
+.about {
+  color: #23a6d5;
+}
+.home {
+   color: yellow;
+}
